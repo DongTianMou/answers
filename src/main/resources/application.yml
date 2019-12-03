@@ -1,0 +1,17 @@
+server:
+  port: 8088
+spring:
+  datasource:
+   username: root
+   password: root
+   url: jdbc:mysql://172.16.202.134:3306/answers?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&verifyServerCertificate=false&autoReconnct=true&autoReconnectForPools=true&allowMultiQueries=true
+   driver-class-name: com.mysql.cj.jdbc.Driver
+   type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    database: 1
+    port: 6379
+    host: 172.16.202.134
+    password: 123456
+  freemarker:
+    charset: UTF-8
+    suffix: .html
